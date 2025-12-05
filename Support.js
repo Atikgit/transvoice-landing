@@ -8,7 +8,7 @@ const chatBody = document.getElementById("chat-body");
 // আপনার টোকেন সার্ভারের URL (লোকাল টেস্টের জন্য localhost)
 // লাইভ করার সময় এটি আপনার লাইভ সার্ভার URL দিয়ে বদলে দেবেন
 const API_URL = "https://transvoice-token-bmcydudce2bgfufa.centralus-01.azurewebsites.net/api/SupportChat";
-
+//const API_URL = "http://localhost:7071/api/SupportChat";
 // মেসেজ পাঠানোর ফাংশন
 async function sendMessage() {
     const userMessage = chatInput.value.trim();
