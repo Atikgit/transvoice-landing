@@ -92,3 +92,51 @@ sendButton.addEventListener("click", sendMessage);
 chatInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") sendMessage();
 });
+
+
+
+
+// ইমেইল ফর্ম সাবমিশন লজিক
+const form = document.getElementById('emailForm');
+const status = document.getElementById('form-status');
+
+// আপনার নতুন Azure Function এর URL
+const EMAIL_API_URL = "https://transvoice-token-bmcydudce2bgfufa.centralus-01.azurewebsites.net/api/SendEmail"; 
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // ফর্ম থেকে ডাটা নেওয়া
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    status.innerText = "Sending...";
+    status.classList.remove('hidden', 'text-red-400', 'text-green-400');
+    status.classList.add('text-gray-400');
+
+    try {
+        const response = await fetch(EMAIL_API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                email: data.email,
+                message: data.message,
+                subject: "Support Request via Website"
+            })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            status.innerText = "Message sent successfully! We'll reply soon.";
+            status.classList.add('text-green-400');
+            form.reset();
+        } else {
+            status.innerText = "Failed: " + (result.error || "Unknown error");
+            status.classList.add('text-red-400');
+        }
+    } catch (error) {
+        status.innerText = "Network error. Please try again.";
+        status.classList.add('text-red-400');
+    }
+});
