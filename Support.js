@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const knowledgeBase = [
         {
             keywords: ["latency", "delay", "lag", "slow", "sync", "late", "behind", "buffer", "দেরি", "ল্যাগ", "স্লো"],
-            response: "⚙️ **About Latency:** Since TransVoice AI performs complex real-time audio processing, a **natural delay of 1-2 seconds** is expected. This is not a bug.<br><br>💡 **Pro Tip:** If the output voice lags significantly behind the video, please **pause the video for 1-2 seconds** and play again to re-sync. <br><i>Note: This tool is optimized for tutorials & meetings, not fast-paced movies.</i>"
+            response: "⚙️ **About Latency:** Since TransVoice AI performs complex real-time audio processing, a **natural delay of 1-2 seconds** is expected. This is not a bug.<br><br>💡 **Pro Tip:** If the output voice lags significantly behind the video, please **pause the video for 1-2 seconds** and play again to re-sync. <br><i>Note: This tool is optimized for tutorials, e-Learning & descriptive video, not fast-paced movies.</i>"
         },
         {
             keywords: ["refund", "money back", "return", "cancel", "payment", "টাকা ফেরত"],
