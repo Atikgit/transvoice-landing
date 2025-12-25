@@ -35,7 +35,7 @@
         .text-gradient {
             background: linear-gradient(to right, #22c55e, #3b82f6);
             -webkit-background-clip: text;
-            background-clip: text;  /* এই লাইনটি নতুন যোগ করুন */
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
@@ -49,19 +49,25 @@
                     <i class="fa-solid fa-wave-square text-neonGreen text-2xl"></i>
                     <span class="font-bold text-xl tracking-wider text-white">TransVoice <span class="text-gold" style="font-family: cursive;">AI</span></span>
                 </div>
+                
                 <div class="hidden md:block">
-                    <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#features" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Features</a>
                         <a href="#demo" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">How it Works</a>
                         <a href="#pricing" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
-        
                         <a href="support.html" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Support</a>
-        
-                        <a href="mailto:info@transvoice.ai" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                        
+                        <button id="login-btn" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition border border-gray-600 hover:border-neonGreen">
+                            <i class="fa-brands fa-google mr-2"></i> Login
+                        </button>
+                        <div id="user-profile" class="hidden items-center gap-2">
+                             <img id="user-avatar" src="" class="w-8 h-8 rounded-full border border-neonGreen">
+                             <span id="user-name" class="text-sm font-bold text-neonGreen truncate max-w-[100px]"></span>
+                             <button id="logout-btn" class="text-xs text-red-400 hover:text-red-200 ml-2">(Logout)</button>
+                        </div>
                     </div>
                 </div>
-                </div>
+
                 <div>
                     <a href="#" class="bg-gradient-to-r from-neonGreen to-electricBlue text-white px-6 py-2 rounded-full font-bold shadow-lg hover:shadow-neonGreen/50 transition transform hover:scale-105">
                         Get Extension
@@ -168,7 +174,7 @@
                         <li class="flex items-center"><span class="text-green-400 font-bold flex items-center"><i class="fa-solid fa-gift mr-2"></i> +5 Mins Bonus</span></li>
                         <li class="flex items-center"><i class="fa-solid fa-check mr-2" style="color: #cd7f32;"></i> Standard Support</li>
                     </ul>
-                    <a href="https://transvoice.gumroad.com/l/transvoice-premium" target="_blank" class="block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #cd7f32;">
+                    <a href="#" data-slug="transvoice-premium" class="buy-btn block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #cd7f32;">
                         Get Started
                     </a>
                 </div>
@@ -190,7 +196,7 @@
                         <li class="flex items-center"><span class="text-green-400 font-bold flex items-center"><i class="fa-solid fa-gift mr-2"></i> +10 Mins Bonus</span></li>
                         <li class="flex items-center"><i class="fa-solid fa-check mr-2" style="color: #ffd700;"></i> Fast Processing</li>
                     </ul>
-                    <a href="#" class="block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #ffd700;">
+                    <a href="#" data-slug="transvoice-premium" class="buy-btn block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #ffd700;">
                         Get Started
                     </a>
                 </div>
@@ -212,7 +218,7 @@
                         <li class="flex items-center"><span class="text-green-400 font-bold flex items-center"><i class="fa-solid fa-gift mr-2"></i> +20 Mins Bonus</span></li>
                         <li class="flex items-center"><i class="fa-solid fa-check mr-2" style="color: #e5e4e2;"></i> Priority Support</li>
                     </ul>
-                    <a href="https://transvoice.gumroad.com/l/transvoice-premium" target="_blank" class="block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #e5e4e2;">
+                    <a href="#" data-slug="transvoice-premium" class="buy-btn block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #e5e4e2;">
                         Get Started
                     </a>
                 </div>
@@ -234,7 +240,7 @@
                         <li class="flex items-center"><span class="text-green-400 font-bold flex items-center"><i class="fa-solid fa-gift mr-2"></i> +30 Mins Bonus</span></li>
                         <li class="flex items-center"><i class="fa-solid fa-check mr-2" style="color: #b9f2ff;"></i> HD Voice Output</li>
                     </ul>
-                    <a href="https://transvoice.gumroad.com/l/transvoice-premium" target="_blank" class="block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #b9f2ff;">
+                    <a href="#" data-slug="transvoice-premium" class="buy-btn block w-full py-2 text-center rounded-lg font-bold transition hover:opacity-90 text-slate-900" style="background-color: #b9f2ff;">
                         Get Started
                     </a>
                 </div>
@@ -249,7 +255,7 @@
                 
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="assets/logo.png" alt="TransVoice Logo" class="w-8 h-8 object-contain">
+                        <i class="fa-solid fa-wave-square text-neonGreen text-xl"></i>
                         <span class="font-bold text-lg text-white">TransVoice <span class="text-gold">AI</span></span>
                     </div>
                     
@@ -299,6 +305,98 @@
             </div>
         </div>
     </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+        // IMPORTANT: Replace this with your actual Firebase project configuration
+        // Firebase Console -> Project Settings -> General -> Your Apps -> Web App
+        const firebaseConfig = {
+            apiKey: "AIzaSyBl1Kx7R15wAqeJFZg5rUMVZG2p1ybMyV0",
+            authDomain: "transvoice-83086.firebaseapp.com",
+            projectId: "transvoice-83086",
+            storageBucket: "transvoice-83086.firebasestorage.app",
+            messagingSenderId: "833199270277",
+            appId: "1:833199270277:web:a541392254e0caa406bcec"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        // DOM Elements
+        const loginBtn = document.getElementById('login-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const userProfile = document.getElementById('user-profile');
+        const userNameSpan = document.getElementById('user-name');
+        const userAvatar = document.getElementById('user-avatar');
+        const buyButtons = document.querySelectorAll('.buy-btn');
+
+        // 1. Handle Login
+        loginBtn.addEventListener('click', () => {
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    console.log("Logged in:", result.user.email);
+                })
+                .catch((error) => {
+                    console.error("Login Failed:", error);
+                    alert("Login failed: " + error.message);
+                });
+        });
+
+        // 2. Handle Logout
+        logoutBtn.addEventListener('click', () => {
+            signOut(auth).then(() => {
+                alert("Logged out successfully");
+            });
+        });
+
+        // 3. Monitor Auth State (UI Updates)
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in
+                loginBtn.classList.add('hidden');
+                userProfile.classList.remove('hidden');
+                userProfile.classList.add('flex');
+                userNameSpan.textContent = user.displayName || user.email;
+                userAvatar.src = user.photoURL || "https://via.placeholder.com/32";
+            } else {
+                // User is signed out
+                loginBtn.classList.remove('hidden');
+                userProfile.classList.add('hidden');
+                userProfile.classList.remove('flex');
+            }
+        });
+
+        // 4. Handle Purchase Clicks
+        buyButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); // Stop default link behavior
+                
+                const user = auth.currentUser;
+
+                if (user) {
+                    // User is logged in, proceed to Gumroad
+                    const productSlug = btn.getAttribute('data-slug');
+                    
+                    // Construct URL with User ID and Email
+                    // Example: https://transvoice.gumroad.com/l/transvoice-premium?client_reference_id=UID123&email=user@gmail.com
+                    const gumroadUrl = `https://transvoice.gumroad.com/l/${productSlug}?client_reference_id=${user.uid}&email=${user.email}`;
+                    
+                    // Redirect to Gumroad
+                    window.location.href = gumroadUrl;
+                } else {
+                    // User is NOT logged in
+                    const confirmLogin = confirm("You need to login first to subscribe so we can activate your account. Login now?");
+                    if (confirmLogin) {
+                        loginBtn.click(); // Trigger login popup
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
