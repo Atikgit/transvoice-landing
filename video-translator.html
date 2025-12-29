@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Live Video & Stream Translator for Chrome | TransVoice AI</title>
-    <meta name="description" content="Watch YouTube Live, Twitch streams, Live Sports, and e-Learning videos in your own language. Real-time AI voice translation and subtitles.">
+    <meta name="description" content="Watch YouTube Live, Live Sports, and e-Learning videos in your own language. Real-time AI voice translation and subtitles.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -41,10 +41,23 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Custom Gradient Backgrounds for Cards (No Images Needed) */
-        .bg-sports { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
-        .bg-edu { background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); }
-        .bg-ent { background: linear-gradient(135deg, #3f1015 0%, #0f172a 100%); }
+        
+        /* PREMIUM CARD BACKGROUNDS (CSS Generated) */
+        .bg-sports { 
+            background: radial-gradient(circle at top right, rgba(34, 197, 94, 0.15), transparent 40%),
+                        linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        .bg-edu { 
+            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 40%),
+                        linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .bg-ent { 
+            background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.15), transparent 40%),
+                        linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
     </style>
 </head>
 <body class="font-sans antialiased overflow-x-hidden">
@@ -81,7 +94,7 @@
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <div class="inline-block px-4 py-1 mb-6 rounded-full border border-red-500/30 bg-red-500/10 text-red-400 text-sm font-semibold">
-                    <i class="fa-brands fa-youtube mr-2"></i> Works on YouTube, Twitch & More
+                    <i class="fa-brands fa-youtube mr-2"></i> Works on YouTube, Sports & More
                 </div>
                 <h1 class="text-5xl font-bold mb-6 leading-tight">
                     Watch Any Video in <br>
@@ -135,7 +148,6 @@
             <p class="text-gray-500 text-sm mb-6 uppercase tracking-widest">Works perfectly on your favorite platforms</p>
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
                 <div class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-300 hover:text-red-500 transition cursor-default"><i class="fa-brands fa-youtube"></i> YouTube</div>
-                <div class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-300 hover:text-purple-500 transition cursor-default"><i class="fa-brands fa-twitch"></i> Twitch</div>
                 <div class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-300 hover:text-blue-500 transition cursor-default"><i class="fa-solid fa-graduation-cap"></i> Coursera</div>
                 <div class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-300 hover:text-white transition cursor-default"><i class="fa-solid fa-building-columns"></i> edX.org</div>
                 <div class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-300 hover:text-green-500 transition cursor-default"><i class="fa-solid fa-futbol"></i> Live Sports</div>
@@ -148,32 +160,40 @@
             <h2 class="text-3xl font-bold text-center mb-16">Unlock Global Content</h2>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group">
-                    <div class="h-48 rounded-xl bg-sports mb-6 flex items-center justify-center relative overflow-hidden border border-gray-700">
-                        <i class="fa-solid fa-baseball-bat-ball text-6xl text-white/20 absolute"></i>
-                        <i class="fa-solid fa-trophy text-4xl text-gold relative z-10 group-hover:scale-110 transition duration-300"></i>
-                        <span class="absolute top-4 right-4 bg-red-600 text-white text-xs px-2 py-1 rounded font-bold">LIVE</span>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group border border-gray-700 hover:border-green-500/50">
+                    <div class="h-48 rounded-xl bg-sports mb-6 flex items-center justify-center relative overflow-hidden shadow-lg shadow-green-900/20">
+                        <i class="fa-solid fa-baseball-bat-ball text-8xl text-white/5 absolute -right-4 -bottom-4"></i>
+                        <div class="z-10 text-center">
+                            <i class="fa-solid fa-trophy text-4xl text-gold mb-2 drop-shadow-lg group-hover:scale-110 transition duration-300"></i>
+                            <div class="text-green-400 text-xs font-bold tracking-widest uppercase">Live Match</div>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Live Sports Commentary</h3>
-                    <p class="text-gray-400 text-sm">Watch Cricket, Football, or NBA matches with commentary in your own language. Understand every technical analysis instantly.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Watch Cricket, Football, or NBA matches with commentary in your own language. Understand every technical analysis instantly.</p>
                 </div>
 
-                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group">
-                    <div class="h-48 rounded-xl bg-edu mb-6 flex items-center justify-center relative overflow-hidden border border-gray-700">
-                        <i class="fa-solid fa-book-open text-6xl text-white/20 absolute"></i>
-                        <i class="fa-solid fa-chalkboard-user text-4xl text-electricBlue relative z-10 group-hover:scale-110 transition duration-300"></i>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group border border-gray-700 hover:border-blue-500/50">
+                    <div class="h-48 rounded-xl bg-edu mb-6 flex items-center justify-center relative overflow-hidden shadow-lg shadow-blue-900/20">
+                        <i class="fa-solid fa-code text-8xl text-white/5 absolute -left-4 -top-4"></i>
+                        <div class="z-10 text-center">
+                            <i class="fa-solid fa-graduation-cap text-5xl text-electricBlue mb-2 drop-shadow-lg group-hover:scale-110 transition duration-300"></i>
+                            <div class="text-blue-300 text-xs font-bold tracking-widest uppercase">Education</div>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Global e-Learning</h3>
-                    <p class="text-gray-400 text-sm">Take courses from Harvard, MIT, or Google on Coursera & edX. Translate complex lectures into Bengali, Spanish, or Hindi.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Take courses from Harvard, MIT, or Google on Coursera & edX. Translate complex lectures into Bengali, Spanish, or Hindi.</p>
                 </div>
 
-                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group">
-                    <div class="h-48 rounded-xl bg-ent mb-6 flex items-center justify-center relative overflow-hidden border border-gray-700">
-                        <i class="fa-solid fa-play text-6xl text-white/20 absolute"></i>
-                        <i class="fa-brands fa-youtube text-4xl text-red-500 relative z-10 group-hover:scale-110 transition duration-300"></i>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition group border border-gray-700 hover:border-red-500/50">
+                    <div class="h-48 rounded-xl bg-ent mb-6 flex items-center justify-center relative overflow-hidden shadow-lg shadow-red-900/20">
+                        <i class="fa-brands fa-youtube text-8xl text-white/5 absolute -right-4 -top-4"></i>
+                        <div class="z-10 text-center">
+                            <i class="fa-solid fa-circle-play text-5xl text-red-500 mb-2 drop-shadow-lg group-hover:scale-110 transition duration-300"></i>
+                            <div class="text-red-300 text-xs font-bold tracking-widest uppercase">Entertainment</div>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3">International Creators</h3>
-                    <p class="text-gray-400 text-sm">Enjoy Japanese Anime, Korean Vlogs, or American Tech Reviews on YouTube without waiting for official subtitles.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Enjoy Japanese Anime, Korean Vlogs, or American Tech Reviews on YouTube without waiting for official subtitles.</p>
                 </div>
             </div>
         </div>
