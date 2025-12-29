@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User Guide & Support | TransVoice AI Documentation</title>
+    <meta name="description" content="Learn how to install, setup, and use TransVoice AI Chrome Extension. Troubleshooting guide, FAQs, and step-by-step tutorials.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        neonGreen: '#22c55e',
+                        electricBlue: '#3b82f6',
+                        gold: '#eab308',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Custom Accordion Styles */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-wave-square text-neonGreen text-2xl"></i>
+                    <span class="font-bold text-xl tracking-wider text-white">TransVoice <span class="text-gold" style="font-family: cursive;">AI</span></span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="meeting-translator.html" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Solutions</a>
+                        <a href="index.html#pricing" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://chromewebstore.google.com/search/transvoice" class="bg-gradient-to-r from-neonGreen to-electricBlue text-white px-6 py-2 rounded-full font-bold shadow-lg hover:shadow-neonGreen/50 transition transform hover:scale-105">
+                        Get Extension
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-12 px-4 bg-gradient-to-b from-navy to-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">How can we help you?</h1>
+            <p class="text-gray-400 text-lg mb-8">Master TransVoice AI in minutes. Setup guides, tutorials, and troubleshooting.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#installation" class="glass px-6 py-3 rounded-lg hover:bg-white/10 transition flex items-center gap-2">
+                    <i class="fa-brands fa-chrome text-electricBlue"></i> Installation
+                </a>
+                <a href="#how-to-use" class="glass px-6 py-3 rounded-lg hover:bg-white/10 transition flex items-center gap-2">
+                    <i class="fa-solid fa-play text-neonGreen"></i> User Guide
+                </a>
+                <a href="#faq" class="glass px-6 py-3 rounded-lg hover:bg-white/10 transition flex items-center gap-2">
+                    <i class="fa-solid fa-circle-question text-gold"></i> FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 bg-electricBlue/20 rounded-full flex items-center justify-center text-electricBlue font-bold">1</div>
+                <h2 class="text-2xl font-bold">Installation & Setup</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-gray-700">
+                        <h3 class="font-bold text-neonGreen mb-2">Step 1: Add to Chrome</h3>
+                        <p class="text-gray-400 text-sm">Go to the Chrome Web Store and click the "Add to Chrome" button. Confirm by clicking "Add Extension".</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-gray-700">
+                        <h3 class="font-bold text-gold mb-2">Step 2: Pin the Extension (Important!)</h3>
+                        <p class="text-gray-400 text-sm">Click the <i class="fa-solid fa-puzzle-piece mx-1"></i> Puzzle icon on the top right of your browser. Find 'TransVoice AI' and click the <i class="fa-solid fa-thumbtack mx-1"></i> Pin icon. This makes it easy to access.</p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-gray-700">
+                        <h3 class="font-bold text-white mb-2">Step 3: Login</h3>
+                        <p class="text-gray-400 text-sm">Click the TransVoice icon. Sign in using your Google account to activate your free trial.</p>
+                    </div>
+                </div>
+                
+                <div class="glass p-2 rounded-xl border border-gray-700 aspect-video flex items-center justify-center bg-black/40">
+                    <div class="text-center">
+                        <i class="fa-solid fa-puzzle-piece text-6xl text-gray-600 mb-4"></i>
+                        <p class="text-gray-500">Extension Menu Screenshot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-use" class="py-16 px-4 bg-slate-900/30">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 bg-neonGreen/20 rounded-full flex items-center justify-center text-neonGreen font-bold">2</div>
+                <h2 class="text-2xl font-bold">How to Start Translating</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass p-6 rounded-xl hover:border-neonGreen transition">
+                    <i class="fa-brands fa-youtube text-3xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">For Videos (YouTube/Twitch)</h3>
+                    <ol class="list-decimal list-inside text-gray-400 text-sm space-y-2">
+                        <li>Open the video tab.</li>
+                        <li>Click the TransVoice icon.</li>
+                        <li>Select <strong>"System Audio"</strong> mode.</li>
+                        <li>Choose Target Language (e.g., Spanish).</li>
+                        <li>Click <strong>Start Translation</strong>.</li>
+                    </ol>
+                </div>
+
+                <div class="glass p-6 rounded-xl hover:border-electricBlue transition">
+                    <i class="fa-solid fa-video text-3xl text-electricBlue mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">For Meetings (Zoom/Meet)</h3>
+                    <ol class="list-decimal list-inside text-gray-400 text-sm space-y-2">
+                        <li>Join your meeting.</li>
+                        <li>Open TransVoice extension.</li>
+                        <li>Select <strong>"System Audio"</strong> to hear others translated.</li>
+                        <li>Or select <strong>"Microphone"</strong> to translate your own voice.</li>
+                        <li>Click Start.</li>
+                    </ol>
+                </div>
+
+                <div class="glass p-6 rounded-xl hover:border-gold transition">
+                    <i class="fa-solid fa-users text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">User-to-User Call</h3>
+                    <ol class="list-decimal list-inside text-gray-400 text-sm space-y-2">
+                        <li>Go to Dashboard.</li>
+                        <li>Click "Meeting Call" tab.</li>
+                        <li>Create a Room ID.</li>
+                        <li>Share ID with your friend.</li>
+                        <li>Start talking privately!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <details class="glass rounded-lg group cursor-pointer">
+                    <summary class="p-6 font-bold flex justify-between items-center">
+                        Is TransVoice AI free to use?
+                        <span class="text-neonGreen group-open:rotate-180 transition transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm border-t border-gray-700 pt-4">
+                        Yes! We offer a free tier that gives you 30 minutes of translation credit every month. For heavy usage, you can upgrade to our affordable premium plans.
+                    </div>
+                </details>
+
+                <details class="glass rounded-lg group cursor-pointer">
+                    <summary class="p-6 font-bold flex justify-between items-center">
+                        Does it work on Netflix or offline files?
+                        <span class="text-neonGreen group-open:rotate-180 transition transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm border-t border-gray-700 pt-4">
+                        It works on any browser tab that plays audio, including Netflix web player. However, it requires an internet connection to process the AI translation, so it does not work offline.
+                    </div>
+                </details>
+
+                <details class="glass rounded-lg group cursor-pointer">
+                    <summary class="p-6 font-bold flex justify-between items-center">
+                        Why is there no sound?
+                        <span class="text-neonGreen group-open:rotate-180 transition transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm border-t border-gray-700 pt-4">
+                        Please ensure you have selected the correct "Source" (System Audio vs Mic). Also, check if the tab is muted. If the problem persists, refresh the page and try again.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 pt-12 pb-8 bg-navy">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 mb-4">Still need help?</p>
+            <a href="mailto:support@transvoice.ai" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full transition border border-gray-700">
+                <i class="fa-solid fa-envelope text-neonGreen"></i> Contact Support
+            </a>
+            <p class="text-gray-500 text-sm mt-8">&copy; 2025 TransVoice LLC.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
