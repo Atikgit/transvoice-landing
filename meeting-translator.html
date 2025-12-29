@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User-to-User Real-Time Voice Translation | TransVoice AI</title>
+    <meta name="description" content="Talk directly to anyone in their language. TransVoice AI enables private, real-time translated voice calls between users. No Zoom or external apps needed.">
+    <meta name="keywords" content="user to user voice translation, private translated chat, multilingual voice call, ai speech translator, direct voice translation">
+    <link rel="canonical" href="https://transvoice.ai/meeting-translator.html">
+
+    <meta property="og:title" content="Speak Locally, Be Heard Globally | TransVoice AI">
+    <meta property="og:description" content="Start a private voice chat room and understand each other instantly. 130+ languages supported.">
+    <meta property="og:image" content="https://transvoice.ai/assets/preview-image.jpg">
+    <meta property="og:url" content="https://transvoice.ai/meeting-translator.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        neonGreen: '#22c55e',
+                        electricBlue: '#3b82f6',
+                        gold: '#eab308',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #22c55e, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-wave-square text-neonGreen text-2xl"></i>
+                    <span class="font-bold text-xl tracking-wider text-white">TransVoice <span class="text-gold" style="font-family: cursive;">AI</span></span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#how-it-works" class="text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">How it Works</a>
+                        <a href="index.html#pricing" class="hover:text-neonGreen px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://chromewebstore.google.com/search/transvoice" class="bg-gradient-to-r from-neonGreen to-electricBlue text-white px-6 py-2 rounded-full font-bold shadow-lg hover:shadow-neonGreen/50 transition transform hover:scale-105">
+                        Start Calling
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-electricBlue/20 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-20 left-0 w-72 h-72 bg-neonGreen/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-block px-4 py-1 mb-6 rounded-full border border-gold/30 bg-gold/10 text-gold text-sm font-semibold">
+                    <i class="fa-solid fa-lock mr-2"></i> Private & Secure
+                </div>
+                <h1 class="text-5xl font-bold mb-6 leading-tight">
+                    Talk User-to-User in <br>
+                    <span class="text-gradient">Any Language</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8">
+                    No need for Zoom or Meet. Create a private room, invite a user, and have a seamless voice conversation where both hear their own language.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="index.html#pricing" class="bg-white text-navy px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition text-center">
+                        Start a Call
+                    </a>
+                    <a href="#how-it-works" class="border border-gray-500 px-8 py-3 rounded-lg font-bold hover:border-white transition flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-circle-play"></i> See How it Works
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="glass p-8 rounded-2xl border border-gray-700 relative z-10">
+                    <div class="flex justify-between items-center mb-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-gray-700 border-2 border-neonGreen flex items-center justify-center mx-auto mb-2 overflow-hidden">
+                                <i class="fa-solid fa-user text-3xl text-gray-400"></i>
+                            </div>
+                            <p class="font-bold">You (English)</p>
+                            <div class="mt-2 bg-gray-800 px-3 py-1 rounded-lg text-xs text-neonGreen">
+                                <i class="fa-solid fa-microphone-lines"></i> "Hello, how are you?"
+                            </div>
+                        </div>
+
+                        <div class="flex-1 px-4 flex flex-col items-center">
+                            <i class="fa-solid fa-arrow-right-arrow-left text-electricBlue text-2xl animate-pulse"></i>
+                            <span class="text-xs text-gray-500 mt-2">AI Translation</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-gray-700 border-2 border-electricBlue flex items-center justify-center mx-auto mb-2 overflow-hidden">
+                                <i class="fa-solid fa-user text-3xl text-gray-400"></i>
+                            </div>
+                            <p class="font-bold">Client (Spanish)</p>
+                            <div class="mt-2 bg-gray-800 px-3 py-1 rounded-lg text-xs text-electricBlue">
+                                <i class="fa-solid fa-headphones"></i> "Hola, ¿cómo estás?"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-4 border-t border-gray-700">
+                        <span class="text-sm text-gray-400"><i class="fa-solid fa-circle text-red-500 mr-2 animate-pulse"></i>Live Session Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Connect in <span class="text-gold">3 Simple Steps</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute top-0 right-0 w-1/2 h-1 bg-gray-700 mt-6 -mr-4 z-0"></div>
+                    <div class="glass p-6 rounded-xl relative z-10 hover:border-neonGreen transition duration-300">
+                        <div class="w-12 h-12 bg-neonGreen text-navy font-bold text-xl rounded-full flex items-center justify-center mb-4 absolute -top-6 left-6 shadow-lg shadow-neonGreen/20">1</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Register & Login</h3>
+                        <p class="text-gray-400">Create your TransVoice account. Both users need to be registered to ensure a secure connection.</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute top-0 right-0 w-1/2 h-1 bg-gray-700 mt-6 -mr-4 z-0"></div>
+                    <div class="glass p-6 rounded-xl relative z-10 hover:border-electricBlue transition duration-300">
+                        <div class="w-12 h-12 bg-electricBlue text-white font-bold text-xl rounded-full flex items-center justify-center mb-4 absolute -top-6 left-6 shadow-lg shadow-electricBlue/20">2</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Connect with User</h3>
+                        <p class="text-gray-400">Find your partner by their username or email within the extension dashboard and initiate a call.</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-0">
+                    <div class="glass p-6 rounded-xl relative z-10 hover:border-gold transition duration-300">
+                        <div class="w-12 h-12 bg-gold text-navy font-bold text-xl rounded-full flex items-center justify-center mb-4 absolute -top-6 left-6 shadow-lg shadow-gold/20">3</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Speak Freely</h3>
+                        <p class="text-gray-400">Start talking. Our AI translates your voice to their language (and vice versa) in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Perfect For</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-8 rounded-2xl flex items-start gap-4">
+                    <div class="bg-blue-500/20 p-3 rounded-lg">
+                        <i class="fa-solid fa-briefcase text-blue-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">International Business</h3>
+                        <p class="text-gray-400">Close deals with clients who don't speak your language. Professional, accurate, and private.</p>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-2xl flex items-start gap-4">
+                    <div class="bg-purple-500/20 p-3 rounded-lg">
+                        <i class="fa-solid fa-heart text-purple-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Cross-Border Relationships</h3>
+                        <p class="text-gray-400">Communicate with friends and family abroad without the language barrier getting in the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 pt-12 pb-8 bg-navy text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-4">Ready to break the barrier?</h3>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html" class="text-neonGreen hover:underline">Back to Home</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://chromewebstore.google.com/search/transvoice" class="text-electricBlue hover:underline">Download Extension</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 TransVoice LLC.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
