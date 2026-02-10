@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://transvoice.ai/</loc>
+    <loc>https://www.transvoice.ai/</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>https://transvoice.ai/support.html</loc>
+    <loc>https://www.transvoice.ai/support.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://transvoice.ai/privacy.html</loc>
+    <loc>https://www.transvoice.ai/privacy.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://transvoice.ai/terms.html</loc>
+    <loc>https://www.transvoice.ai/terms.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://transvoice.ai/refund.html</loc>
+    <loc>https://www.transvoice.ai/refund.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-        <loc>https://transvoice.ai/meeting-translator.html</loc>
+        <loc>https://www.transvoice.ai/meeting-translator.html</loc>
         <lastmod>2025-12-30</lastmod>
         <priority>0.80</priority>
     </url>
 
     <url>
-        <loc>https://transvoice.ai/video-translator.html</loc>
+        <loc>https://www.transvoice.ai/video-translator.html</loc>
         <lastmod>2025-12-30</lastmod>
         <priority>0.80</priority>
     </url>
 
     <url>
-        <loc>https://transvoice.ai/guide.html</loc>
+        <loc>https://www.transvoice.ai/guide.html</loc>
         <lastmod>2025-12-30</lastmod>
         <priority>0.80</priority>
     </url>
